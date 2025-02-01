@@ -17,8 +17,7 @@ clean-targets:  # Directories to clear when running dbt clean
 
 models:
   tweet_text:
-    staging:
-      materialized: table
+    materialized: table
 
 seeds:
   tweet_text:
