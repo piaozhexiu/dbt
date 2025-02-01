@@ -1,0 +1,29 @@
+name: 'tweet_search'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+source-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+
+target-path: "target"  # Directory where dbt will store compiled SQL files
+clean-targets:  # Directories to clear when running dbt clean
+  - "target"
+  - "dbt_modules"
+
+models:
+  your_project_name:
+    staging:
+      materialized: view
+    tweet_texts:
+      materialized: table
+
+seeds:
+  your_project_name:
+    # Config applied to all seed files
+    quote_columns: false
+
