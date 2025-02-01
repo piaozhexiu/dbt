@@ -2,9 +2,9 @@
 
 WITH source_data AS (
     SELECT 
-        'data'::json AS raw_data  -- Replace 'json_data_field' with the actual field name containing the JSON.
+        'data'::json AS raw_data
     FROM 
-        'fast_campus.default.tweet_search'  -- Replace 'source_table' with the actual table name containing the JSON data.
+        'fast_campus.default.tweet_search'
 )
 
 SELECT 
