@@ -1,4 +1,3 @@
--- models/stg_tweets.sql
 SELECT
   tweet.text
 FROM
