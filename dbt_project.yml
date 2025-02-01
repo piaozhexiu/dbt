@@ -1,4 +1,4 @@
-name: 'tweet_search'
+name: 'tweet_text'
 version: '1.0.0'
 config-version: 2
 
@@ -16,14 +16,12 @@ clean-targets:  # Directories to clear when running dbt clean
   - "dbt_modules"
 
 models:
-  your_project_name:
+  tweet_text:
     staging:
-      materialized: view
-    tweet_texts:
       materialized: table
 
 seeds:
-  your_project_name:
+  tweet_text:
     # Config applied to all seed files
     quote_columns: false
 
