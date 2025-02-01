@@ -2,7 +2,7 @@
 
 WITH source_data AS (
     SELECT 
-        data::json AS raw_data
+        'data'::json AS raw_data
     FROM 
         fast_campus.default.tweet_search
 )
