@@ -1,4 +1,4 @@
-name: 'tweet_text'
+name: 'parse_tweets'
 version: '1.0.0'
 config-version: 2
 
@@ -14,6 +14,6 @@ clean-targets:
   - "dbt_modules"
 
 models:
-  tweet_text:
+  parse_tweets:
     +materialized: table
 
