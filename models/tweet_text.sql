@@ -13,4 +13,3 @@ FROM
     FROM
       fast_campus.default.tweet_search
   )
-
