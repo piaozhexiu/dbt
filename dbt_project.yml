@@ -15,12 +15,5 @@ clean-targets:
 
 models:
   tweet_text:
-    materialized: table
-  tickers_from_tweets:
-    materialized: table
-
-seeds:
-  tweet_text:
-    # Config applied to all seed files
-    quote_columns: false
+    +materialized: table
 
