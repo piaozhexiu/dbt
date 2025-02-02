@@ -6,4 +6,4 @@ SELECT
 FROM
     {{ ref('tweet_text') }}
 GROUP BY 1, 2, 3
-ORDER BY 4 DESC
+ORDER BY 1, 2, 3
